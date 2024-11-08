@@ -16,6 +16,10 @@
     
     <title>Changumi Online Store</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
@@ -45,8 +49,18 @@
         color: white;
     }
 
-    .cart {
-      color: white;
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .right-element {
+      text-align: right;
+      margin-right: -250px;
+    }
+
+    .right-element .for-buy {
+      margin-right: 20px;
     }
 </style>
 
@@ -66,7 +80,7 @@
             <div class="search-bar row bg-light p-2 my-2 rounded-4">
               <div class="col-11 col-md-10 d-none d-md-block">
               <form id="search-form" class="text-center" action="index.html" method="post">
-                  <input type="text" class="form-control border-0 bg-transparent" placeholder="Search for more than 20,000 products" />
+                  <input type="text" class="form-control border-0 bg-transparent" placeholder="Search for cosmetics and kitchen products" />
                 </form>
               </div>
               
@@ -84,12 +98,11 @@
 
             
 
-            <div class="col-sm-6 col-lg-4 d-flex justify-content-end gap-8 align-items-center mt-4 mt-sm-0 justify-content-center justify-content-sm-end">
+            <div class="">
 						<div class="right-element">
 							<a href="#" class="user-account for-buy"><i
-									class="icon icon-user"></i><span>Account</span></a>
-							<a href="#" class="cart for-buy"><i class="icon icon-clipboard"></i><span>Cart:(0
-									$)</span></a>
+									class="fas fa-user"></i><span> Account</span></a>
+							<a href="#" class="cart for-buy"><i class="fas fa-shopping-cart"></i><span>Cart</span></a>
 
 
 						</div>
