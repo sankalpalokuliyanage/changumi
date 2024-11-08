@@ -28,21 +28,29 @@
     
 
 <style>
-      * {
+    * {
         font-family: 'Roboto', sans-serif;
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
 
+    body {
+        letter-spacing: 0.03em;
+    }
+
+    .container-fluid {
+        max-width: 1600px;
+        padding: 0 15px;
+    }
+
     .main-logo {
         width: 150px;
-        
     }
 
     #topbar {
         background: black;
-        padding: 50px;
+        padding: 10px;
     }
 
     .support-box {
@@ -50,139 +58,140 @@
     }
 
     a {
-      color: #fff;
-      text-decoration: none;
+        color: #fff;
+        text-decoration: none;
     }
 
     .right-element {
-      text-align: right;
-      margin-right: -250px;
+        text-align: right;
+        margin-right: 0;
     }
 
     .right-element .for-buy {
-      margin-right: 20px;
+        margin-right: 20px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 991px) {
+        #topbar {
+            padding: 20px;
+        }
+
+        .main-logo {
+            width: 100px;
+        }
+
+        .search-bar {
+            display: none;
+        }
+
+        .support-box {
+            text-align: center;
+        }
+    }
+
+    @media (max-width: 576px) {
+        #topbar {
+            padding: 15px;
+        }
+
+        .support-box {
+            display: none;
+        }
+
+        .main-logo {
+            width: 80px;
+        }
+
+        .right-element {
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        .navbar-nav {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .menu-list {
+            gap: 1rem;
+        }
     }
 </style>
 
+
 <header>
-      <div class="container-fluid">
-        <div id = "topbar" class="row py-3 border-bottom">
-          
-          <div class="col-sm-4 col-lg-3 text-center text-sm-start">
-            <div class="main-logo">
-              <a href="index.html">
-                <img src="img/changumiicon.png" alt="logo" class="img-fluid">
-              </a>
-            </div>
-          </div>
-          
-          <div class="col-sm-6 offset-sm-2 offset-md-0 col-lg-4 d-none d-lg-block">
-            <div class="search-bar row bg-light p-2 my-2 rounded-4">
-              <div class="col-11 col-md-10 d-none d-md-block">
-              <form id="search-form" class="text-center" action="index.html" method="post">
-                  <input type="text" class="form-control border-0 bg-transparent" placeholder="Search for cosmetics and kitchen products" />
-                </form>
-              </div>
-              
-              <div class="col-1">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 7-7a7 7 0 0 1-7 7Z"/></svg>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-sm-8 col-lg-4 d-flex justify-content-end gap-4 align-items-center mt-4 mt-sm-0 justify-content-center ">
-            <div class="support-box text-end d-none d-xl-block">
-              <span class="fs-6 text-white">For Support?</span>
-              <h5 class="mb-0">+82 10 4832 0845</h5>
+    <div class="container-fluid">
+        <div id="topbar" class="row py-3 border-bottom align-items-center">
+            <div class="col-6 col-sm-4 text-center text-sm-start">
+                <div class="main-logo">
+                    <a href="index.html">
+                        <img src="img/changumiicon.png" alt="logo" class="img-fluid">
+                    </a>
+                </div>
             </div>
 
-            
+            <div class="col-lg-4 d-none d-lg-flex">
+                <div class="search-bar row bg-light p-2 rounded-4 w-100">
+                    <form id="search-form" class="d-flex w-100" action="index.html" method="post">
+                        <input type="text" class="form-control border-0 bg-transparent" placeholder="Search for cosmetics and kitchen products">
+                        <button type="submit" class="btn btn-light p-0">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
 
-            <div class="">
-						<div class="right-element">
-							<a href="#" class="user-account for-buy"><i
-									class="fas fa-user"></i><span> Account</span></a>
-							<a href="#" class="cart for-buy"><i class="fas fa-shopping-cart"></i><span>Cart</span></a>
+            <div class="col-6 col-sm-8 col-lg-4 d-flex justify-content-end gap-3 align-items-center mt-3 mt-sm-0">
+                <div class="support-box text-end d-none d-md-block">
+                    <span class="fs-6 text-white">For Support?</span>
+                    <h5 class="mb-0">+82 10 4832 0845</h5>
+                </div>
 
-
-						</div>
-          </div>
-
+                <div class="right-element">
+                    <a href="#" class="user-account for-buy"><i class="fas fa-user"></i> <span>Account</span></a>
+                    <a href="#" class="cart for-buy"><i class="fas fa-shopping-cart"></i> <span>Cart</span></a>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="container-fluid">
+    </div>
+
+    <div class="container-fluid">
         <div class="row py-3">
-          <div class="d-flex  justify-content-center justify-content-sm-between align-items-center">
-            <nav class="main-menu d-flex navbar navbar-expand-lg">
+            <div class="d-flex justify-content-center align-items-center">
+                <nav class="main-menu navbar navbar-expand-lg">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar">
-                <span class="navbar-toggler-icon"></span>
-              </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header justify-content-center">
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
 
-              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-
-                <div class="offcanvas-header justify-content-center">
-                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-
-                <div class="offcanvas-body">
-              
-                  <select class="filter-categories border-0 mb-0 me-5">
-                    <option>Shop by Departments</option>
-                    <option>Groceries</option>
-                    <option>Drinks</option>
-                    <option>Chocolates</option>
-                  </select>
-              
-                  <ul class="navbar-nav justify-content-end menu-list list-unstyled d-flex gap-md-3 mb-0">
-                    <li class="nav-item active">
-                      <a href="#women" class="nav-link">Women</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a href="#men" class="nav-link">Men</a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="#kids" class="nav-link">Kids</a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="#accessories" class="nav-link">Accessories</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" role="button" id="pages" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
-                      <ul class="dropdown-menu" aria-labelledby="pages">
-                        <li><a href="index.html" class="dropdown-item">About Us </a></li>
-                        <li><a href="index.html" class="dropdown-item">Shop </a></li>
-                        <li><a href="index.html" class="dropdown-item">Single Product </a></li>
-                        <li><a href="index.html" class="dropdown-item">Cart </a></li>
-                        <li><a href="index.html" class="dropdown-item">Checkout </a></li>
-                        <li><a href="index.html" class="dropdown-item">Blog </a></li>
-                        <li><a href="index.html" class="dropdown-item">Single Post </a></li>
-                        <li><a href="index.html" class="dropdown-item">Styles </a></li>
-                        <li><a href="index.html" class="dropdown-item">Contact </a></li>
-                        <li><a href="index.html" class="dropdown-item">Thank You </a></li>
-                        <li><a href="index.html" class="dropdown-item">My Account </a></li>
-                        <li><a href="index.html" class="dropdown-item">404 Error </a></li>
-                      </ul>
-                    </li>
-                    <li class="nav-item">
-                      <a href="#brand" class="nav-link">Brand</a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="#sale" class="nav-link">Sale</a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="#blog" class="nav-link">Blog</a>
-                    </li>
-                  </ul>
-                
-                </div>
-
-              </div>
-          </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav menu-list list-unstyled d-flex flex-column flex-lg-row gap-3 gap-md-4 mb-0">
+                                <li class="nav-item">
+                                    <a href="#luxury" class="nav-link">Luxury Cosmetics</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#norcos" class="nav-link">Cosmetics</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#Kitc" class="nav-link">Kitchen</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#blog" class="nav-link">Blog</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
         </div>
-      </div>
-    </header>
+    </div>
+</header>
+
 
 
 
