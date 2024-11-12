@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/vendor.css">
+    <link rel="stylesheet" type="text/css" href="vendor.css">
     <link rel="stylesheet" type="text/css" href="style.css">
 
     <!-- Favicons -->
@@ -320,18 +320,19 @@
               
                 
               
-                  <ul class="navbar-nav justify-content-end menu-list list-unstyled d-flex gap-md-3 mb-0">
+                  <ul class="navbar-nav justify-content-end menu-list list-unstyled d-flex gap-md-4 mb-2 ">
+                    
                     <li class="nav-item active">
-                      <a href="#women" class="nav-link">Women</a>
+                      <a href="#luxcos" class="nav-link">Luxury Cosmetics</a>
                     </li>
                     <li class="nav-item dropdown">
-                      <a href="#men" class="nav-link">Men</a>
+                      <a href="#cos" class="nav-link">Cosmetics</a>
                     </li>
                     <li class="nav-item">
-                      <a href="#kids" class="nav-link">Kids</a>
+                      <a href="#ramens" class="nav-link">Ramen</a>
                     </li>
                     <li class="nav-item">
-                      <a href="#accessories" class="nav-link">Accessories</a>
+                      <a href="#other" class="nav-link">Other Kitchen</a>
                     </li>
                     
                     <li class="nav-item">
