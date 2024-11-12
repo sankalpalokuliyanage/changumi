@@ -33,30 +33,14 @@
     
 
 <style>
-    * {
-        font-family: 'Roboto', sans-serif;
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
+    
 
-    body {
-        letter-spacing: 0.03em;
-    }
-
-    .container-fluid {
-        max-width: 1600px;
-        padding: 0 15px;
-    }
+    
 
     .main-logo {
         width: 150px;
     }
 
-    #topbar {
-        background: black;
-        padding: 10px;
-    }
 
     .support-box {
         color: white;
@@ -65,62 +49,6 @@
     a {
         color: #fff;
         text-decoration: none;
-    }
-
-    .right-element {
-        text-align: right;
-        margin-right: 0;
-    }
-
-    .right-element .for-buy {
-        margin-right: 20px;
-    }
-
-    /* Responsive Design */
-    @media (max-width: 991px) {
-        #topbar {
-            padding: 20px;
-        }
-
-        .main-logo {
-            width: 100px;
-        }
-
-        .search-bar {
-            display: none;
-        }
-
-        .support-box {
-            text-align: center;
-        }
-    }
-
-    @media (max-width: 576px) {
-        #topbar {
-            padding: 15px;
-        }
-
-        .support-box {
-            display: none;
-        }
-
-        .main-logo {
-            width: 80px;
-        }
-
-        .right-element {
-            flex-direction: column;
-            align-items: flex-end;
-        }
-
-        .navbar-nav {
-            flex-direction: column;
-            text-align: center;
-        }
-
-        .menu-list {
-            gap: 1rem;
-        }
     }
 </style>
 
@@ -364,8 +292,8 @@
 
             <div class="cart text-end d-none d-lg-block dropdown">
               <button class="border-0 bg-transparent d-flex flex-column gap-2 lh-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
-                <span class="fs-6 text dropdown-toggle">Your Cart</span>
-                <span class="cart-total fs-5 fw-bold">$1290.00</span>
+                <span class="fs-6 text dropdown-toggle" style = "color: white;">Your Cart</span>
+                <span class="cart-total fs-5 fw-bold" style = "color: white;">$1290.00</span>
               </button>
             </div>
           </div>
