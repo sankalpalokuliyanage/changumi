@@ -282,15 +282,14 @@ h1,h2,h3,h4,h5,h6 {
 
 /* banner ad */
 .banner-ad {
-  position: relative;
+  position: absolute;
   overflow: hidden;
-  border-radius: 12px;
+  border-radius: 2px;
+  padding-right: -20%;
 }
-.banner-ad.blue {
-  background: #e6f3fb;
-}
+
 .banner-ad .swiper-pagination {
-  bottom: 40px;
+
   left: 0;
   right: 0;
 }
