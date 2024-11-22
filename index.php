@@ -349,8 +349,8 @@
       </div>
     </header>
 
-<section class="py-3" style="background-image: url('img/background-pattern.jpg');background-repeat: no-repeat;background-size: cover;">
-<div class="container-fluid">
+    <section class="py-3" style="background-image: url('images/background-pattern.jpg');background-repeat: no-repeat;background-size: cover;">
+      <div class="container-fluid">
         <div class="row">
           <div class="col-md-12">
 
@@ -361,17 +361,21 @@
                 <div class="swiper main-swiper">
                   <div class="swiper-wrapper">
                     
-          
+                   
                     
-               
+                    
                     
                     <div class="swiper-slide">
                       <div class="row banner-content p-5">
                         <div class="content-wrapper col-md-7">
-                          <div class="categories mb-3 pb-3">100% natural</div>
-                          <h3 class="banner-title">ROSE WATER SOOTHING GEL</h3>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim massa diam elementum.</p>
-                          <a href="#" class="btn btn-outline-dark btn-lg text-uppercase fs-6 rounded-1">Shop Collection</a>
+                          <div class="categories mb-3 pb-3">HOT <i class="fa-solid fa-fire"></i> Deal</div>
+                          <h3 class="banner-title">CICA CERAMIDE <br>REPAIR CREAM</h3>
+                          <p>Looking for the perfect cream for dry skin? Look no further!
+<br>
+This ultra-moisturizing cream, packed with ceramides, provides intense hydration and deep repair. While it's rich and thick, it works wonders to soothe and care for breakout-prone skin, tackling dryness and restoring your skin's natural glow.
+<br>
+Your all-in-one solution for deep nourishment and problem-free skin!</p>
+                          <a href="#" class="btn btn-outline-dark btn-lg text-uppercase fs-6 rounded-1">Shop Now</a>
                         </div>
                         <div class="img-wrapper col-md-5">
                           <img src="images/product-thumb-1.png" class="img-fluid">
@@ -380,29 +384,29 @@
                     </div>
                   </div>
                   
-                  
+                  <div class="swiper-pagination"></div>
 
                 </div>
               </div>
               
-              <div class="banner-ad bg-success-subtle block-2" style="background:url('images/ad-image-1.png') no-repeat;background-position: right bottom">
+              <div class="banner-ad bg-danger-subtle block-2" style="background:url('images/ad-image-1-1.png') no-repeat;background-position: right bottom">
                 <div class="row banner-content p-5">
 
                   <div class="content-wrapper col-md-7">
-                    <div class="categories sale mb-3 pb-3">20% off</div>
-                    <h3 class="banner-title">Fruits & Vegetables</h3>
+                    <div class="categories sale mb-3 pb-3">10% off</div>
+                    <h3 class="banner-title">SOOTHING GELS</h3>
                     <a href="#" class="d-flex align-items-center nav-link">Shop Collection <svg width="24" height="24"><use xlink:href="#arrow-right"></use></svg></a>
                   </div>
 
                 </div>
               </div>
 
-              <div class="banner-ad bg-danger block-3" style="background:url('images/ad-image-2.png') no-repeat;background-position: right bottom">
+              <div class="banner-ad bg-danger block-3" style="background:url('images/ad-image-2-2.png') no-repeat;background-position: right bottom">
                 <div class="row banner-content p-5">
 
                   <div class="content-wrapper col-md-7">
-                    <div class="categories sale mb-3 pb-3">15% off</div>
-                    <h3 class="item-title">Baked Products</h3>
+                    <div class="categories sale mb-3 pb-3">10% off</div>
+                    <h3 class="item-title">Ramen Products</h3>
                     <a href="#" class="d-flex align-items-center nav-link">Shop Collection <svg width="24" height="24"><use xlink:href="#arrow-right"></use></svg></a>
                   </div>
 
@@ -415,8 +419,7 @@
           </div>
         </div>
       </div>
-
-</section>
+    </section>
 
 
 
